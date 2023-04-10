@@ -7,7 +7,8 @@
 </head>
 <body>
     {{-- Navbar Content --}}
-    <header class="absolute top-0 left-0 right-0 z-20">
+    <header class="bg-white dark:bg-gray-900 fixed w-full top-0 left-0 right-0 z-20 border-b border-gray-200 dark:border-gray-600">
+    {{-- <header class="absolute top-0 left-0 right-0 z-20"> --}}
         <nav class="container px-6 py-4 mx-auto md:px-12">
             <div class="items-center justify-between md:flex">
                 <div class="flex items-center justify-between">

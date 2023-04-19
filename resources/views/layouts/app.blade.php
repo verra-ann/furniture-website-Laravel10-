@@ -22,17 +22,17 @@
                             </path>
                         </svg>
                     </a>
-                    <div class="md:hidden">
-                        <button class="text-white focus:outline-none" data-collapse-toggle="mobile-menu-2" type="button">
+                    {{-- <div class="md:hidden"> --}}
+                        <button class="text-white focus:outline-none md:hidden" data-collapse-toggle="mobile-menu" type="button">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 </path>
                             </svg>
                         </button>
-                    </div>
+                    {{-- </div> --}}
                 </div>
-                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
                             <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300" href="/about">About us</a>
@@ -52,6 +52,18 @@
     @yield('about')
     @yield('blog')
 </body>
+<!-- Nav JavaScript -->
+<script>
+    const toggleButton = document.querySelector('[data-collapse-toggle="mobile-menu"]');
+    const menu = document.querySelector('#mobile-menu');
+    
+    toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+    });
+</script>
+<!-- Nav JavaScript -->
+
     <footer class="bg-white dark:bg-gray-800 pt-4 pb-8 xl:pt-8">
         <div class="max-w-screen-lg px-4 mx-auto text-gray-400 xl:max-w-screen-xl sm:px-6 md:px-8 dark:text-gray-300">
             @yield('contact')

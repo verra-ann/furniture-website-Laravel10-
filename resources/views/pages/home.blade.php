@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('home')
-    
 <div class="relative h-screen overflow-hidden bg-indigo-900">
     <img src="/images/home-2.png" class="absolute object-cover w-full h-full"/>
     <div class="absolute inset-0 bg-black opacity-25">
@@ -20,7 +19,7 @@
     </div>
 </div>
 {{-- ----------------------------------------------------------------------------------------------------------------------------------- --}}
-<div class="h-screen bg-gradient-to-b from-gray-50 to-gray-200" >
+<div class="bg-gradient-to-b from-gray-50 to-gray-200" >
     <div class="container relative flex flex-col items-center justify-between px-6 py-8 mx-auto">
         <div class="flex flex-col">
             <h1 class="w-full text-4xl font-light text-center text-gray-800 uppercase sm:text-5xl">

@@ -16,8 +16,7 @@ Project is created with :
 * Contact form for customers to send inquiries
 
 # Preview
-Home Page
-
+https://github.com/verra-ann/furniture-website-Laravel10-/blob/main/public/ss/Home-1.png
 
 # Contributing
 If there is any issues or bugs with the website, or if there's any suggestions for improvements, feel free to open an issue or pull request on the GitHub repository.
